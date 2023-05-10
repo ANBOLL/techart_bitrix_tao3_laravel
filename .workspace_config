@@ -1,0 +1,4 @@
+project gfl
+
+path_to_frontend frontend/
+node 18

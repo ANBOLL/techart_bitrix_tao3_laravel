@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+
+$app = require_once realpath(__DIR__.'/vendor/techart/tao3/bootstrap/app.php');
+$app->cli();
+

@@ -1,0 +1,9 @@
+@import "utils";
+
+$block-name: "b-page";
+
+.#{$block-name} {
+	width: $global-width;
+	margin: 0 auto;
+	padding: 0;
+}

@@ -1,0 +1,10 @@
+@import "utils";
+
+$block-name: "b-main";
+
+.#{$block-name} {
+	padding: 10px 0;
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(to right, #fff 90%, #eee 100%);
+}

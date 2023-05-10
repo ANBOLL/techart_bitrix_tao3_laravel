@@ -1,0 +1,1 @@
+<?php return tao_cfg('logging');

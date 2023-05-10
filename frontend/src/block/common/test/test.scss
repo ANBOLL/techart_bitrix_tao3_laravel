@@ -1,0 +1,24 @@
+@import "utils";
+
+$block-name: "b-test";
+
+.#{$block-name} {
+	width: 300px;
+	background-color: #eee;
+	border: 0.2rem solid maroon;
+	border-radius: 1rem;
+	padding: 0.5rem 0.75rem;
+	font-size: 1rem;
+
+	&__title {
+		font-weight: 600;
+	}
+
+	&__first {
+		font-style: italic;
+	}
+
+	&__second {
+		font-size: 0.8rem;
+	}
+}

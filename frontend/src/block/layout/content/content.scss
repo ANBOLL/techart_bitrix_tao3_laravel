@@ -1,0 +1,37 @@
+@import "utils";
+
+$block-name: "b-content";
+
+.#{$block-name} {
+	width: 790px;
+	margin: 0 0 0 10px;
+	padding: 0 10px 0 0;
+	font-size: 14px;
+	float: left;
+
+	h1,
+	h2,
+	h3 {
+		color: #842b5b;
+		font-weight: bold;
+	}
+
+	h1 {
+		margin: 0 0 10px;
+		font-size: 22px;
+	}
+
+	h2 {
+		margin: 20px 0 10px;
+		font-size: 18px;
+	}
+
+	h3 {
+		margin: 20px 0 10px;
+		font-size: 16px;
+	}
+
+	p {
+		margin: 0 0 10px;
+	}
+}

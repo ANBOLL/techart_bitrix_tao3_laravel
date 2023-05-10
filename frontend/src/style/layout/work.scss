@@ -1,0 +1,10 @@
+// Файл для подключения шрифтов и библиотек.
+// Писать в этом файле свои стили ОЧЕНЬ не рекомендуется, все стили должны быть разнесены по блокам.
+@import "~style";
+@include site-fonts;
+@include foundation-global-styles;
+
+body {
+	min-width: $global-min-width;
+	padding: 5px;
+}

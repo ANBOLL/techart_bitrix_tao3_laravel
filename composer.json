@@ -1,0 +1,48 @@
+{
+	"minimum-stability": "alpha",
+	"name": "techart/laravel",
+	"version": "8.0.0",
+	"description": "Techart Laravel Project",
+	"keywords": [
+		"framework",
+		"laravel",
+		"techart"
+	],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"php": "~8.1",
+		"techart/tao3": "^8.0"
+	},
+	"autoload": {
+		"classmap": [
+			"database"
+		],
+		"psr-4": {
+			"App\\": "app/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests/"
+		}
+	},
+	"scripts": {
+		"post-root-package-install": [
+			"php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate; php artisan service_folders:create"
+		],
+		"post-install-cmd": [
+			"Illuminate\\Foundation\\ComposerScripts::postInstall"
+		],
+		"post-update-cmd": [
+			"Illuminate\\Foundation\\ComposerScripts::postUpdate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist",
+		"sort-packages": true
+	}
+}

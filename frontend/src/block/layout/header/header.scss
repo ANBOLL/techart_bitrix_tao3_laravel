@@ -1,0 +1,7 @@
+@import "utils";
+
+$block-name: "b-header";
+
+.#{$block-name} {
+	border: 1px solid #888;
+}

@@ -1,0 +1,10 @@
+@import "utils";
+
+$block-name: "b-sidebar";
+
+.#{$block-name} {
+	width: 180px;
+	border: 1px solid #888;
+	float: left;
+	min-height: 500px;
+}

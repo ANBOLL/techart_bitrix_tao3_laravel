@@ -1,0 +1,13 @@
+@import "utils";
+
+$block-name: "b-footer";
+
+.#{$block-name} {
+	float: none;
+	clear: both;
+	border: 1px solid #888;
+	background-color: #ccc;
+	padding: 5px 10px;
+	font-size: 12px;
+	color: #444;
+}

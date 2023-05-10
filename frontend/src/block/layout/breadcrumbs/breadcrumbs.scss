@@ -1,0 +1,12 @@
+@import "utils";
+
+$block-name: "b-breadcrumbs";
+
+.#{$block-name} {
+	font-size: 12px;
+	padding: 0 0 3px;
+
+	&__item {
+		color: #888;
+	}
+}
