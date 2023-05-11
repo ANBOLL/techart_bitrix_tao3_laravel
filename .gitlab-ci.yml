@@ -84,12 +84,16 @@ deploy_frontend_titan:
   #   BUILDS_PATH:    -- Путь к каталогу для сборок frontend-а от корня проекта (не сайта).
   #                   -- Начальный и конечный слэши указывать не надо!
   #                   -- По умолчанию настроен для проектов TAO: www/builds
+  variables:
+    TITAN_HOST: php81.vps.intranet
 
 
 # ВЫКЛАДКА КОДА НА ХОСТИНГ
 # ========================
 deploy_hosting:
-  extends: .task_code_deploy_hosting
+  extends:
+    - .task_code_deploy_hosting
+    - .mixin_php_8_1
   # В задаче доступны следующие переменные для переопределения:
   # variables:
   #   HOST_NAME:      -- Доменное имя сайта.
@@ -130,7 +134,9 @@ deploy_hosting:
 # ВЫКЛАДКА FRONTEND-А НА ХОСТИНГ
 # ==============================
 deploy_frontend_hosting:
-  extends: .task_frontend_deploy_hosting
+  extends:
+    - .task_frontend_deploy_hosting
+    - .mixin_php_8_1
   # В задаче доступны следующие переменные для переопределения:
   # variables:
   #   HOST_NAME:      -- Доменное имя сайта.
