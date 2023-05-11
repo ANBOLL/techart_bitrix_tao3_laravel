@@ -29,7 +29,9 @@ build_frontend:
 # ВЫКЛАДКА КОДА НА ТИТАН
 # ======================
 deploy_titan:
-  extends: .task_code_deploy_titan
+  extends:
+    - .task_code_deploy_titan
+    - .mixin_php_8_1
   # В задаче доступны следующие переменные для переопределения:
   # variables:
   #   HOST_NAME:      -- Имя каталога сайта в каталоге site проекта на Титане.
@@ -54,7 +56,9 @@ deploy_titan:
 # ВЫКЛАДКА FRONTEND-А НА ТИТАН
 # ============================
 deploy_frontend_titan:
-  extends: .task_frontend_deploy_titan
+  extends:
+    - .task_frontend_deploy_titan
+    - .mixin_php_8_1
   # В задаче доступны следующие переменные для переопределения:
   # variables:
   #   HOST_NAME:      -- Имя каталога сайта в каталоге site проекта на Титане.
