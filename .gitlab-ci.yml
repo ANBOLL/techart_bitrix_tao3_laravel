@@ -9,7 +9,9 @@ include:
 #     # "/templates/.base-tasks-node-10.yml"   -- для проектов с node.js 10-й версии
 #     # "/templates/.base-tasks-node-14.yml"   -- для проектов с node.js 14-й версии
 #     # "/templates/.base-tasks-node-16.yml"   -- для проектов с node.js 16-й версии
-    file: "/testing/.base-tasks-node-18.yml"
+    file:
+      - "/testing/.base-tasks-node-18.yml"
+      - "/testing/.base-tasks-php-8-1.yml"
 
 
 # СБОРКА FRONTEND-А
@@ -29,9 +31,7 @@ build_frontend:
 # ВЫКЛАДКА КОДА НА ТИТАН
 # ======================
 deploy_titan:
-  extends:
-    - .task_code_deploy_titan
-    - .mixin_php_8_1
+  extends: .task_code_vendor_deploy_titan
   # В задаче доступны следующие переменные для переопределения:
   # variables:
   #   HOST_NAME:      -- Имя каталога сайта в каталоге site проекта на Титане.
@@ -51,6 +51,8 @@ deploy_titan:
   #                   -- По умолчанию используется пользователь git.
   #                   -- Менять пользователя без крайней нужды не рекомендуется, но если потребуется,
   #                   -- то обязательно следует заменить и SSH_KEY на приватный ключ указанного пользователя.
+  variables:
+    TITAN_HOST: php81.vps.intranet
 
 
 # ВЫКЛАДКА FRONTEND-А НА ТИТАН
