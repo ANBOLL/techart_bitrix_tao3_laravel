@@ -93,9 +93,7 @@ deploy_frontend_titan:
 # ВЫКЛАДКА КОДА НА ХОСТИНГ
 # ========================
 deploy_hosting:
-  extends:
-    - .task_code_deploy_hosting
-    - .mixin_php_8_1
+  extends: .task_code_vendor_deploy_hosting
   # В задаче доступны следующие переменные для переопределения:
   # variables:
   #   HOST_NAME:      -- Доменное имя сайта.
