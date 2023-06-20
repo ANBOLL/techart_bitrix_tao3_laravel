@@ -12,6 +12,7 @@
 	"type": "project",
 	"require": {
 		"php": "~8.1",
+		"techart/io": "^3.0",
 		"techart/tao3": "^8.0"
 	},
 	"autoload": {
