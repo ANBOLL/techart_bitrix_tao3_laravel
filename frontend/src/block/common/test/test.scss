@@ -5,10 +5,11 @@ $block-name: "b-test";
 .#{$block-name} {
 	width: 300px;
 	background-color: #eee;
-	border: 0.2rem solid #000555;
+	border: 3px dotted #000555;
 	border-radius: 1rem;
 	padding: 0.5rem 0.75rem;
 	font-size: 1rem;
+	margin: auto;
 
 	&__title {
 		font-weight: 600;
