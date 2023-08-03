@@ -2,13 +2,22 @@
 # Забираем базовые шаблоны для выкладки по SSH
 include:
   - project: "libs/cicd-includes"
-#     # Существуют заранее настроенные наборы задач для сборки и выкладки кода
-#     # и frontend-а на Титан и хостинг для проектов с разной версией Node.js
-#     # В ключе file, указанном ниже, можете написать один из следующих путей:
-#     # "/templates/.base-tasks-node-8.yml"    -- для проектов с node.js 8-й версии
-#     # "/templates/.base-tasks-node-10.yml"   -- для проектов с node.js 10-й версии
-#     # "/templates/.base-tasks-node-14.yml"   -- для проектов с node.js 14-й версии
-#     # "/templates/.base-tasks-node-16.yml"   -- для проектов с node.js 16-й версии
+    # Существуют заранее настроенные наборы задач для сборки и выкладки кода
+    # и frontend-а на Титан и хостинг для проектов с разной версией Node.js
+    # В ключе file, указанном ниже, можете написать один из следующих путей для работы с node.js:
+    # "/templates/.base-tasks-node-8-old.yml"  -- для проектов с node.js 8-й версии и старыми библиотеками
+    # "/templates/.base-tasks-node-8.yml"      -- для проектов с node.js 8-й версии
+    # "/templates/.base-tasks-node-10.yml"     -- для проектов с node.js 10-й версии
+    # "/templates/.base-tasks-node-14.yml"     -- для проектов с node.js 14-й версии
+    # "/templates/.base-tasks-node-16.yml"     -- для проектов с node.js 16-й версии
+    # "/templates/.base-tasks-node-18.yml"     -- для проектов с node.js 18-й версии
+    # В ключе file, указанном ниже, дополнительно можете написать один из следующих путей для работы с php:
+    # "/templates/.base-tasks-php-5-6.yml"     -- для проектов с php версии 5.6
+    # "/templates/.base-tasks-php-7-2.yml"     -- для проектов с php версии 7.2
+    # "/templates/.base-tasks-php-7-3.yml"     -- для проектов с php версии 7.3
+    # "/templates/.base-tasks-php-7-4.yml"     -- для проектов с php версии 7.4
+    # "/templates/.base-tasks-php-8-0.yml"     -- для проектов с php версии 8.0
+    # "/templates/.base-tasks-php-8-1.yml"     -- для проектов с php версии 8.1
     file:
       - "/testing/.base-tasks-node-18.yml"
       - "/testing/.base-tasks-php-8-1.yml"
