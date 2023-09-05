@@ -5,11 +5,15 @@ $block-name: "b-test";
 .#{$block-name} {
 	width: 300px;
 	background-color: #eee;
-	border: 3px dotted #000555;
-	border-radius: 1rem;
+	border: 3px groove #000555;
+	border-radius: 1.3rem;
 	padding: 0.5rem 0.75rem;
 	font-size: 1rem;
 	margin: auto;
+
+	&:hover {
+		background-color: #32398079;
+	}
 
 	&__title {
 		font-weight: 600;
@@ -21,12 +25,12 @@ $block-name: "b-test";
 
 	&__second {
 		font-size: 0.8rem;
+	}
 
-		&:hover {
-			color: #841844;
-			font-style: italic;
-			font-weight: 800;
-			font-size: 1.5rem;
-		}
+	&__test-image {
+		height: 200px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 150px;
 	}
 }
