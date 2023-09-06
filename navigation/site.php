@@ -22,4 +22,8 @@ return [
 		'title' => 'Новости',
 		'url' => '/news/',
 	],
+	[
+		'title' => 'Связь',
+		'url' => '/contact',
+	],
 ];
