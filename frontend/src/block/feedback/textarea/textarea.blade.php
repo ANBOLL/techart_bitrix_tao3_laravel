@@ -1,0 +1,1 @@
+<textarea name="{{$name}}" class="{{$block}}" id="{{$id}}" rows="{{$rows}}" placeholder="{{$placeholder}}" required></textarea>

@@ -7,6 +7,7 @@ module.exports = {
 	mainTemplateType: 'blade',
 	entry: {
 		index: ['./src/entry/index.js'],
+		feedback: ['./src/entry/feedback.js'],
 	},
 	stats: {},
 	https: true,

@@ -1,0 +1,11 @@
+@import "~style";
+
+$block-name: "b-form";
+
+.#{$block-name} {
+	padding: 5px;
+
+	&__form-group {
+		margin: 0 0 10px;
+	}
+}

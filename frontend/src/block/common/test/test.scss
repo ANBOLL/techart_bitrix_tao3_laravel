@@ -33,4 +33,25 @@ $block-name: "b-test";
 		background-position: center;
 		background-size: 150px;
 	}
+
+	&__feedback-contact {
+		width: max-content;
+		border: 3px groove #000555;
+		border-radius: 1.2rem;
+		padding: 5px;
+		margin: 0 auto;
+
+		&:hover {
+			background-color: #fff;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
 }
