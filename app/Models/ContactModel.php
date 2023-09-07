@@ -4,8 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use TAO\ORM\Abstracts\FormMessageModel;
 
-class ContactModel extends \TAO\ORM\Model
+class ContactModel extends FormMessageModel
 {
     public $table = 'contacts';
     public $typeTitle = 'Контакты';
@@ -18,16 +19,18 @@ class ContactModel extends \TAO\ORM\Model
                 'label' => 'Имя',
                 'in_form' => true,
                 'in_list' => true,
-                'style' => 'width: 90%',
             ),
             'question' => array(
                 'type' => 'text',
                 'label' => 'Вопрос',
                 'in_form' => true,
                 'in_list' => true,
-                'style' => 'width: 90%; height: 200px;',
             ),
         );
+    }
+    protected function getNotifyList()
+    {
+        return ['boldyrev@techart.ru' => 'boldyrev@techart.ru'];
     }
 }
 

@@ -16,5 +16,5 @@
 		</ul>
 	</div>
 @endif
-	{!!\TAO::frontend()->renderBlock('feedback/feedback')!!}
+	{!! dt('contacts')->renderForm() !!}
 @endsection
