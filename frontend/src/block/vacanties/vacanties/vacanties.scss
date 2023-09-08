@@ -1,0 +1,89 @@
+@import "utils";
+
+$block-name: "b-vacanties";
+
+.#{$block-name} {
+	width: 50%;
+	padding: 20px 20px 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+
+	&__top-date-block {
+		display: flex;
+	}
+
+	#actual-icon {
+		width: 15px;
+		height: 15px;
+		background-position: center;
+		background-size: 15px;
+		margin: 0 0 0 5px;
+	}
+
+	#h2-title-block {
+		color: #000;
+		font-size: 15px;
+		margin: 0 0 10px;
+	}
+
+	#date {
+		text-align: center;
+		border-radius: 20px;
+		width: 75px;
+		font-size: 9px;
+		padding: 2px 10px;
+		background-color: #babcbe;
+	}
+
+	#button {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		text-decoration: none;
+		font-size: 10px;
+		width: 80px;
+		padding: 5px 20px;
+		border-radius: 50px;
+		border: 1px solid #9b407a;
+		cursor: pointer;
+		color: #841844;
+
+		&:hover {
+			color: #fff;
+			background-color: #841844;
+		}
+	}
+}
+
+.vacanties-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 50px;
+	height: max-content;
+	padding: 0 0 20px 20px;
+	border: 1px groove #000555;
+	background: linear-gradient(to right, #fff 90%, #eee 100%);
+}
+
+.container-title {
+	display: flex;
+	margin: 10px auto;
+	width: max-content;
+	flex: start;
+
+	.h1-vacanties {
+		color: #000;
+		font-size: 34px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 110%;
+		margin: 0;
+	}
+}

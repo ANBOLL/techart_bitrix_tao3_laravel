@@ -9,6 +9,6 @@
 			data-save-url="{{ $field->apiUrl('save') }}" @bottomScript('/tao/scripts/admin/textarea-save-button.js')
 			data-token="{{ csrf_token() }}"
 		@endif
-		placeholder="Почему лето закончилось?"	
+		required
 		>{!! htmlspecialchars($field->variantValue($code)) !!}</textarea>
 @endforeach

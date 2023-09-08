@@ -8,6 +8,8 @@ module.exports = {
 	entry: {
 		index: ['./src/entry/index.js'],
 		feedback: ['./src/entry/feedback.js'],
+		vacanties: ['./src/entry/vacanties.js'],
+		summary: ['./src/entry/summary.js'],
 	},
 	stats: {},
 	https: true,

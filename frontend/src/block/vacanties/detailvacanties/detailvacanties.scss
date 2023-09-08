@@ -1,0 +1,81 @@
+@import "~style";
+
+$block-name: "b-detailvacanties";
+
+.#{$block-name} {
+	margin: 0 auto;
+	display: flex;
+	flex-flow: wrap column;
+
+	&__detail-vacanties-block {
+		background-color: #0ce16859;
+		margin: 0 auto;
+		padding: 0 5px;
+		border-radius: 10px;
+	}
+
+	&__left-block-image-vacanties {
+		display: flex;
+		width: 100%;
+		height: 300px;
+		margin-right: 20px;
+	}
+
+	&__right-block-image-vacanties {
+		display: flex;
+		width: 100%;
+		height: min-content;
+		flex-direction: column;
+	}
+
+	#h2-detail {
+		margin: 0;
+		text-align: center;
+		color: #000;
+	}
+
+	#h4-detail {
+		margin: 0 0 5px;
+		text-align: center;
+	}
+
+	&__container-detail-vacanties {
+		display: flex;
+		padding: 30px;
+
+		p {
+			margin: 0;
+			border-left: 3px solid #9b407a;
+			padding-left: 10px;
+		}
+	}
+
+	#h1-detail {
+		margin: 0;
+		color: var(--body-text, #000);
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 140%;
+	}
+
+	#button {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		text-decoration: none;
+		font-size: 13px;
+		width: max-content;
+		padding: 5px 20px;
+		margin: 0 auto;
+		border-radius: 50px;
+		border: 1px solid #9b407a;
+		cursor: pointer;
+		color: #841844;
+
+		&:hover {
+			color: #fff;
+			background-color: #841844;
+		}
+	}
+}

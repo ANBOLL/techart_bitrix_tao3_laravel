@@ -24,6 +24,14 @@ return [
 	],
 	[
 		'title' => 'Связь',
-		'url' => '/contact',
+		'url' => '/contact/',
+	],
+	[
+		'title' => 'Админка',
+		'url' => '/admin',
+	],
+	[
+		'title' => 'Вакансии',
+		'url' => '/vacanties/',
 	],
 ];

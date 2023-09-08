@@ -19,12 +19,16 @@ class ContactModel extends FormMessageModel
                 'label' => 'Имя',
                 'in_form' => true,
                 'in_list' => true,
+                'class' => 'b-input',
+                'placeholder' => 'Андрей',
             ),
             'question' => array(
                 'type' => 'text',
                 'label' => 'Вопрос',
                 'in_form' => true,
                 'in_list' => true,
+                'class' => 'b-textarea',
+                'placeholder' => 'Почему лето закончилось?',
             ),
         );
     }
