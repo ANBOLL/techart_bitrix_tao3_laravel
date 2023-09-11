@@ -33,6 +33,7 @@ class FeedbackVacancyModel extends FormMessageModel
 				'label' => 'Телефон',
 				'in_list' => false,
 				'in_form' => true,
+				'input_template' => 'fields.phone.input',
 				'group' => 'common',
 			],
 			'vacancy' => [
